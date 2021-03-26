@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.StopWatch.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerSize">5dp</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerRadius">28dp</item>
+    </style>
+
+<!--    <style name="Widget.Time.Chrono" parent="Widget.MaterialComponents.Chro"-->
+</resources>

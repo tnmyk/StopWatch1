@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="start">Start ⏳</string>
+    <string name="reset">Done 🛑</string>
+    <string name="stop">Pause 🖐</string>
+    <string name="your_concentration_time">Your Concentration time 🎉 :</string>
+    <string name="stopped">Stopped❗ 😵</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_light"
+    android:orientation="vertical"
+    
+    android:clipToPadding="false"
+    
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/conctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:text="@string/your_concentration_time"
+        android:textStyle="bold"
+
+        />
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/conctext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/timecontainer_dark"
+        android:gravity="center_horizontal"
+
+        android:paddingLeft="50dp"
+        android:paddingTop="18dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="18dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        tools:layout_editor_absoluteX="16dp"
+
+
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="00:00" />
+
+    <Button
+        android:id="@+id/start_Button"
+        style="@style/Widget.StopWatch.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignTop="@id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="365dp"
+        android:minWidth="135dp"
+        android:shadowColor="@color/black"
+
+
+        android:text="@string/start"
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+
+        app:backgroundTint="@color/purple_dark"
+        android:elevation="50dp"
+        app:icon="@drawable/ic_start"
+        app:iconPadding="7dp"
+        app:iconTint="@color/white" />
+
+    <Button
+        android:id="@+id/stop_Button"
+        style="@style/Widget.StopWatch.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+
+        android:layout_alignTop="@id/time"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="365dp"
+        android:minWidth="135dp"
+        android:text="@string/stop"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/purple_dark"
+        app:icon="@drawable/ic_pause"
+        app:iconPadding="7dp"
+
+
+        app:iconSize="30sp"
+        app:iconTint="#FF1F1D" />
+
+    <Button
+        android:id="@+id/reset_Button"
+        style="@style/Widget.StopWatch.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/time"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="430dp"
+        android:minWidth="115dp"
+        android:text="@string/reset"
+
+        android:textColor="@color/white"
+        android:textSize="12.6sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/blue_dark"
+        app:icon="@drawable/ic_baseline_fast_rewind_24"
+        app:iconPadding="7dp"
+        app:iconTint="@color/white"
+
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/themeswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="13dp"
+        android:checked="false"
+        app:thumbTint="@color/purple_dark"
+        app:trackTint="#6CDCEF"
+        android:background="@drawable/darkcontainer"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+</RelativeLayout>
